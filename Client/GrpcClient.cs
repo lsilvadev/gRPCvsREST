@@ -7,7 +7,8 @@ namespace Client
 {
     class GrpcClient
     {
-        public static void GetMessageFor()
+/*
+        public void GetMessageFor()
         {
             var watch = System.Diagnostics.Stopwatch.StartNew();
             string message = "";
@@ -22,8 +23,9 @@ namespace Client
 
             Console.WriteLine(message + " | " + milliseconds + " ms");
         }
+*/
 
-        private static async Task<string> GetMessage()
+        public async Task<string> GetMessage()
         {
             // // macOS
             // // https://docs.microsoft.com/pt-br/aspnet/core/grpc/troubleshoot?view=aspnetcore-3.1#call-insecure-grpc-services-with-net-core-client
@@ -32,6 +34,7 @@ namespace Client
 
             // The port number(5001) must match the port of the gRPC server.
             var channel = GrpcChannel.ForAddress("https://localhost:5001");
+            // var channel = GrpcChannel.ForAddress("http://localhost:5000");
             var client = new GrpcTest.GrpcTestClient(channel);
             var reply = await client.GetMessageAsync(
                               new MessageRequest { Name = "gRPC API" });

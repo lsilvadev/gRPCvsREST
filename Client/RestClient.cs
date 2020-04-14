@@ -5,6 +5,7 @@ namespace Client
 {
     class RestClient
     {
+        /*
         public static void GetMessageFor()
         {
             var watch = System.Diagnostics.Stopwatch.StartNew();
@@ -20,8 +21,9 @@ namespace Client
 
             Console.WriteLine(message + " | " + milliseconds + " ms" );
         }
+        */
 
-        private static string GetMessage ()
+        public string GetMessage ()
         {
             string result = "";
 
