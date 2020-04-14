@@ -11,7 +11,7 @@ namespace Client
     [HtmlExporter]
     public class BenchmarkTest
     {
-        [Params(3, 5)]
+        [Params(50, 100)]
         public int IterationCount;
         readonly GrpcClient grpc = new GrpcClient();
         readonly RestClient rest = new RestClient();
