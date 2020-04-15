@@ -1,5 +1,5 @@
 using System.Threading.Tasks;
-using GrpcAPI;
+using GrpcService;
 using Grpc.Net.Client;
 
 namespace Client
@@ -25,7 +25,7 @@ namespace Client
             // // This switch must be set before creating the GrpcChannel/HttpClient.
             // AppContext.SetSwitch("System.Net.Http.SocketsHttpHandler.Http2UnencryptedSupport", true);
 
-            await client.GetMessageAsync(new MessageRequest { Name = "gRPC API" });
+            await client.GetMessageAsync(new MessageRequest { Name = "gRPC Service" });
         }
     }
 }

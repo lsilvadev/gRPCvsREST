@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Server.Kestrel.Core;
 
-namespace GrpcAPI
+namespace GrpcService
 {
     public class Program
     {

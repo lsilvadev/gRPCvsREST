@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option csharp_namespace = "GrpcAPI";
+option csharp_namespace = "GrpcService";
 
 package Grpc;
 

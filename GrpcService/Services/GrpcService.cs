@@ -2,7 +2,7 @@ using System.Threading.Tasks;
 using Grpc.Core;
 using Microsoft.Extensions.Logging;
 
-namespace GrpcAPI
+namespace GrpcService
 {
     public class GrpcService : GrpcTest.GrpcTestBase
     {

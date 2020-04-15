@@ -11,7 +11,7 @@ namespace Client
     [HtmlExporter]
     public class BenchmarkTest
     {
-        [Params(50, 100)]
+        [Params(100, 200)]
         public int IterationCount;
         readonly GrpcClient grpc = new GrpcClient();
         readonly RestClient rest = new RestClient();
@@ -19,19 +19,13 @@ namespace Client
         [Benchmark]
         public async Task GrpcGetMessage()
         {
-            for (int i = 0; i < IterationCount; i++)
-            {
-                await grpc.GetMessage();
-            }
+            await grpc.GetMessage();
         }
 
         [Benchmark]
         public async Task RestGetMessage()
         {
-            for (int i = 0; i < IterationCount; i++)
-            {
-                await rest.GetMessage();
-            }
+            await rest.GetMessage();
         }
     }
 }
