@@ -26,16 +26,12 @@ namespace Client
         }
 
         [Benchmark]
-        public string RestGetMessage()
+        public async Task RestGetMessage()
         {
-            string message = "";
-
             for (int i = 0; i < IterationCount; i++)
             {
-                message = rest.GetMessage();
+                await rest.GetMessage();
             }
-
-            return message;
         }
     }
 }

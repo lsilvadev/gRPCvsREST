@@ -1,32 +1,17 @@
-using System;
+using System.Net.Http.Headers;
 using System.Net.Http;
+using System.Threading.Tasks;
 
 namespace Client
 {
     class RestClient
     {
-        public string GetMessage ()
+        public async Task<string> GetMessage ()
         {
-            string result = "";
-
-            using (var client = new HttpClient())
-            {
-                var request = new HttpRequestMessage {
-                                    RequestUri = new Uri("http://localhost:3000/restapi/message/Rest API"),
-                                    Method = HttpMethod.Get
-                                };
-                
-                var task = client.SendAsync(request)
-                .ContinueWith((taskwithmsg) =>
-                {
-                    var response = taskwithmsg.Result;
-                    result = response.Content.ReadAsStringAsync().Result;
-                });
-
-                task.Wait();
-            }
-
-            return result;
+            HttpClient client = new HttpClient();
+            client.DefaultRequestHeaders.Accept.Clear();
+            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));            
+            return await client.GetStringAsync("http://localhost:3000/restapi/message/Rest API");
         }
     }
 }

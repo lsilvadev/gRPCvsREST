@@ -21,15 +21,4 @@ dotnet run -c Release
 ```
 
 ### Resultado do Benchmark
-
-``` ini
-BenchmarkDotNet=v0.11.5, OS=Windows 10.0.18362
-```
-
-| Method                         | IterationCount |         Mean |         Error |        StdDev |
-| ------------------------------ | -------------- | -----------: | ------------: | ------------: |
-| GrpcGetMessage                 |   50           |         0 ms |          0 ms |          0 ms |
-| RestGetMessage                 |   50           |         0 ms |          0 ms |          0 ms |
-| GrpcGetMessage                 |  100           |         0 ms |          0 ms |          0 ms |
-| RestGetMessage                 |  100           |         0 ms |          0 ms |          0 ms |
-
+Em breve...
