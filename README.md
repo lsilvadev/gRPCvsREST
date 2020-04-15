@@ -1,7 +1,9 @@
 ## Avaliando o desempenho do gRPC x Rest no .NET Core
 
 O benchmark oferece uma comparação entre a performance do gRPC (HTTP2) e do Rest (HTTP com JSON).
+
 Para geração dos resultados do benchmark foi utilizado a library open-source <a href="https://github.com/dotnet/BenchmarkDotNet">BenchmarkDotNet</a>.
+
 Para executar o benchmark, em um prompt de comando, seguir os passos abaixo.
 
 ### API Rest
