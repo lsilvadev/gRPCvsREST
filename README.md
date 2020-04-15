@@ -14,11 +14,13 @@ cd gRPCvsREST\GrpcAPI
 dotnet run -c Release
 ```
 
-### Executa o benchmark nos serviços (gRPC e Rest)
+### Benchmark nos Serviços (gRPC x Rest)
 cd gRPCvsREST\Client
 ```
 dotnet run -c Release
 ```
+
+### Resultado do Benchmark
 
 ``` ini
 BenchmarkDotNet=v0.11.5, OS=Windows 10.0.18362
