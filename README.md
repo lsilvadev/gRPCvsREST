@@ -1,6 +1,6 @@
 ## Avaliando o desempenho do gRPC x Rest no .NET Core
 
-O benchmark oferece uma comparação entre a performance do gRPC (HTTP2) e do Rest (HTTP com JSON).
+O benchmark oferece uma comparação entre a performance do gRPC (HTTP2 com Protobuf) e do Rest (HTTP com JSON).
 
 Para geração dos resultados foi utilizada a library open-source <a href="https://github.com/dotnet/BenchmarkDotNet">BenchmarkDotNet</a>.
 
@@ -43,7 +43,7 @@ Intel Core i5-7267U CPU 3.10GHz (Kaby Lake), 1 CPU, 4 logical and 2 physical cor
 
 Tempo de execução: 00:05:33 (333.29 segundos)
 
-Legenda:
+#### Legenda
 - IterationCount: valor do parâmetro 'IterationCount'
 - Mean: média aritmética de todas as medições
 - Error: metade do intervalo de confiança de 99,9%
