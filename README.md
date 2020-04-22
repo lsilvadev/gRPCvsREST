@@ -1,4 +1,4 @@
-## Avaliando o desempenho do gRPC x Rest no .NET Core
+## Benchmark gRPC x Rest no .NET Core
 
 Este repositório contém o benchmark que possibilita a comparação entre o desempenho em relação ao tempo de execução do gRPC (HTTP/2 com Protobuf) e do Rest (HTTP com JSON).
 
