@@ -51,6 +51,6 @@ Legenda:
 - Median: valor que separa a metade mais alta de todas as medições
 - 1 us: 1 microssegundo (0.000001 segundo)
 
-![Gráfico]("https://github.com/lsilvadev/gRPCvsREST/blob/master/Image/Client.BenchmarkTest-barplot.png") 
+<img src="https://github.com/lsilvadev/gRPCvsREST/blob/master/Image/Client.BenchmarkTest-barplot.png" width="250" alt="Gráfico">
 
 
