@@ -6,7 +6,7 @@ Para geração dos resultados foi utilizada a library open-source <a href="https
 
 Para executar os projetos, em um prompt de comando, seguir as instruções abaixo.
 
-### API Rest
+### API REST
 cd gRPCvsREST\RestAPI
 ```
 dotnet run -c Release
@@ -18,7 +18,7 @@ cd gRPCvsREST\GrpcService
 dotnet run -c Release
 ```
 
-### Benchmark (gRPC x Rest)
+### Benchmark (gRPC x REST)
 cd gRPCvsREST\Client
 ```
 dotnet run -c Release
@@ -53,4 +53,4 @@ Tempo de execução: 00:05:33 (333.29 segundos)
 
 <img src="https://github.com/lsilvadev/gRPCvsREST/blob/master/Image/Client.BenchmarkTest-barplot.png" width="600" alt="Gráfico">
 
-O gRPC apresentou desempenho melhor que o Rest, conforme evidenciado no benchmark. O gRPC foi projetado para HTTP/2, uma revisão importante do HTTP que fornece benefícios significativos de desempenho. As mensagens gRPC são serializadas usando o Protobuf, um formato de mensagem binária eficiente. Protobuf serializa muito rapidamente no servidor e cliente.
+O gRPC apresentou desempenho melhor que o REST, conforme evidenciado no benchmark. O gRPC foi projetado para HTTP/2, uma revisão importante do HTTP que fornece benefícios significativos de desempenho. As mensagens gRPC são serializadas usando o Protobuf, um formato de mensagem binária eficiente. Protobuf serializa muito rapidamente no servidor e cliente.
